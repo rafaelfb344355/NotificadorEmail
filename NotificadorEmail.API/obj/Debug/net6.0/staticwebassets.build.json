@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "6e2JuWximrJ5EAjxuJY/CHjDb7TV7Ps9zdAzNxVk6og=",
+  "Source": "NotificadorEmail.API",
+  "BasePath": "_content/NotificadorEmail.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
