@@ -4,6 +4,9 @@ using MailKit.Security;
 using Microsoft.AspNetCore.Mvc;
 using MimeKit;
 using MimeKit.Text;
+using NotificadorEmail.API.DTOs;
+using NotificadorEmail.API.Services;
+using System.Threading;
 
 
 namespace NotificadorEmail.API.Controllers
@@ -12,26 +15,26 @@ namespace NotificadorEmail.API.Controllers
     [ApiController]
     public class EmailController : ControllerBase
     {
-        [HttpPost]
-        public bool SendEmail(string body)
+
+        private readonly IEmailService emailService;
+
+        public EmailController(IEmailService emailService)
         {
-            var email = new MimeMessage();
-            email.From.Add(MailboxAddress.Parse("marcelle1@ethereal.email"));
-            email.To.Add(MailboxAddress.Parse("marcelle1@ethereal.email"));
-            email.To.Add(MailboxAddress.Parse("rafael344355@gmail.com"));
-            email.Subject = "test";
-            email.Body = new TextPart(TextFormat.Html) { Text = body };
+            this.emailService = emailService;
+        }
 
-            using var smtp = new SmtpClient();
-            smtp.Connect("smtp.ethereal.email", 587, SecureSocketOptions.StartTls);
+        [HttpPost]
+        public IActionResult SendEmail(RequestDTO request)
+        {
+            var result = emailService.SendEmail(request);
 
-            smtp.Authenticate("marcelle1@ethereal.email", "n7xtTZre2ZZKCpjgjF");
-            smtp.Send(email);
-            smtp.Disconnect(true);
-
-            return true;
+            return Ok(result);
 
         }
+
     }
+    
 }
+       
+
 

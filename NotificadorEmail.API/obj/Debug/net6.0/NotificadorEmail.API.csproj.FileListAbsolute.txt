@@ -35,3 +35,4 @@ C:\Users\rafae\OneDrive\Ambiente de Trabalho\WorkSpace\NotificadorEmail\Notifica
 C:\Users\rafae\OneDrive\Ambiente de Trabalho\WorkSpace\NotificadorEmail\NotificadorEmail.API\bin\Debug\net6.0\BouncyCastle.Cryptography.dll
 C:\Users\rafae\OneDrive\Ambiente de Trabalho\WorkSpace\NotificadorEmail\NotificadorEmail.API\bin\Debug\net6.0\System.Security.Cryptography.Pkcs.dll
 C:\Users\rafae\OneDrive\Ambiente de Trabalho\WorkSpace\NotificadorEmail\NotificadorEmail.API\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\rafae\OneDrive\Ambiente de Trabalho\WorkSpace\NotificadorEmail\NotificadorEmail.API\bin\Debug\net6.0\Services\EmailsComfig.json
