@@ -17,7 +17,7 @@ namespace NotificadorEmail.API
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
             builder.Services.AddScoped<IEmailService, EmailService>();
-
+            builder.Services.AddScoped<IVerificadorService, VerificadorService>();
             var app = builder.Build();
 
             // Configure o pipeline de requisição HTTP.
@@ -41,7 +41,8 @@ namespace NotificadorEmail.API
     }
 
     public class QuartzService
-    {
+
+    {       // Executar a cada 3 minutos
         public async Task ConfigureQuartz()
         {
             // Inicialize o scheduler do Quartz
@@ -54,7 +55,7 @@ namespace NotificadorEmail.API
             ITrigger trigger = TriggerBuilder.Create()
                 .WithIdentity("myTrigger", "group1")
                 .StartNow()
-                .WithSimpleSchedule(x => x.WithIntervalInMinutes(3).RepeatForever()) // Executar a cada 3 minutos
+                .WithSimpleSchedule(x => x.WithIntervalInMinutes(3).RepeatForever()) 
                 .Build();
 
             // Agende o job com o trigger
@@ -64,7 +65,28 @@ namespace NotificadorEmail.API
             await scheduler.Start();
         }
     }
+    // Executar a cada 3 horas
+    /*  public async Task ConfigureQuartz()
+      {
+          // Inicialize o scheduler do Quartz
+          ISchedulerFactory schedulerFactory = new StdSchedulerFactory();
+          IScheduler scheduler = await schedulerFactory.GetScheduler();
 
+          // Defina o job e o trigger
+          IJobDetail job = JobBuilder.Create<MyJobService>().Build();
+
+          ITrigger trigger = TriggerBuilder.Create()
+              .WithIdentity("myTrigger", "group1")
+              .StartNow()
+              .WithSimpleSchedule(x => x.WithIntervalInHours(3).RepeatForever()) 
+              .Build();
+
+          // Agende o job com o trigger
+          await scheduler.ScheduleJob(job, trigger);
+
+          // Inicie o scheduler
+          await scheduler.Start();
+      }*/
     public class MyJobService : IJob
     {
         public Task Execute(IJobExecutionContext context)
@@ -83,9 +105,7 @@ namespace NotificadorEmail.API
                 // Criar o objeto de parâmetros
                 var parameters = new
                 {
-                    to = "llewellyn.ward87@ethereal.email",
-                    subject = "string",
-                    message = "string"
+                    Disp = "111222333",
                 };
 
                 // Serializar o objeto de parâmetros para JSON
@@ -93,7 +113,7 @@ namespace NotificadorEmail.API
                 var content = new StringContent(jsonData, Encoding.UTF8, "application/json");
 
                 // Enviar a requisição POST
-                var response = httpClient.PostAsync("https://localhost:7025/api/Email", content).Result;
+                var response = httpClient.PostAsync("https://localhost:7025/api/Verificador", content).Result;
 
                 // Verificar a resposta
                 if (response.IsSuccessStatusCode)
