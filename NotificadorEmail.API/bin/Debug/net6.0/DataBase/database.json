@@ -1,0 +1,77 @@
+{
+  "Pacientes": [
+    {
+      "ID": 1,
+      "Nome": "João Silva",
+      "CPF": "123.456.789-00",
+      "Email": "joao@example.com",
+      "Regiao": "São Paulo"
+    },
+    {
+      "ID": 2,
+      "Nome": "Maria Santos",
+      "CPF": "987.654.321-00",
+      "Email": "maria@example.com",
+      "Regiao": "Rio de Janeiro"
+    },
+    {
+      "ID": 3,
+      "Nome": "Pedro Oliveira",
+      "CPF": "555.888.999-00",
+      "Email": "pedro@example.com",
+      "Regiao": "Minas Gerais"
+    }
+  ],
+  "AgentesSaude": [
+    {
+      "ID": 1,
+      "Nome": "Dr. Carlos",
+      "CPF": "123.456.789-00",
+      "Email": "carlos@example.com",
+      "Regiao": "São Paulo"
+    },
+    {
+      "ID": 2,
+      "Nome": "Dra. Ana",
+      "CPF": "987.654.321-00",
+      "Email": "ana@example.com",
+      "Regiao": "Rio de Janeiro"
+    },
+    {
+      "ID": 3,
+      "Nome": "Dr. Marcos",
+      "CPF": "555.888.999-00",
+      "Email": "marcos@example.com",
+      "Regiao": "Minas Gerais"
+    }
+  ],
+  "Agendamentos": [
+    {
+      "ID": 1,
+      "TipoAgendamento": "Consulta",
+      "NomePaciente": "João Silva",
+      "NomeDoutor": "Dr. Carlos",
+      "Data": "2023-06-15T00:00:00",
+      "Hora": "0001-01-01T10:00:00",
+      "ConfirmacaoAtraso": false
+    },
+    {
+      "ID": 2,
+      "TipoAgendamento": "Retorno",
+      "NomePaciente": "Maria Santos",
+      "NomeDoutor": "Dra. Ana",
+      "Data": "2023-06-9T00:00:00",
+      "Hora": "0001-01-01T09:30:00",
+      "ConfirmacaoAtraso": false
+    },
+    {
+      "ID": 3,
+      "TipoAgendamento": "Retorno",
+      "NomePaciente": "Pedro Oliveira",
+      "NomeDoutor": "Dr. Marcos",
+      "Data": "2023-06-9T00:00:00",
+      "Hora": "0001-01-01T09:30:00",
+      "ConfirmacaoAtraso": false
+    }
+  ]
+}

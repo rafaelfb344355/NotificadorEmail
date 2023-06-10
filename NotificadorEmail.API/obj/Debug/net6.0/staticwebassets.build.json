@@ -1,11 +1,37 @@
 {
   "Version": 1,
-  "Hash": "6e2JuWximrJ5EAjxuJY/CHjDb7TV7Ps9zdAzNxVk6og=",
+  "Hash": "MXXBnPjWBwAK5F6AaKQdYksoXJrP35oBBp01DP5pFy4=",
   "Source": "NotificadorEmail.API",
   "BasePath": "_content/NotificadorEmail.API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "NotificadorEmail.API\\wwwroot",
+      "Source": "NotificadorEmail.API",
+      "ContentRoot": "C:\\Users\\rafae\\OneDrive\\Ambiente de Trabalho\\WorkSpace\\NotificadorEmail-main\\NotificadorEmail.API\\wwwroot\\",
+      "BasePath": "_content/NotificadorEmail.API",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\rafae\\OneDrive\\Ambiente de Trabalho\\WorkSpace\\NotificadorEmail-main\\NotificadorEmail.API\\wwwroot\\index.html",
+      "SourceId": "NotificadorEmail.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\rafae\\OneDrive\\Ambiente de Trabalho\\WorkSpace\\NotificadorEmail-main\\NotificadorEmail.API\\wwwroot\\",
+      "BasePath": "_content/NotificadorEmail.API",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ]
 }

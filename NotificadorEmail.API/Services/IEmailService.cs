@@ -1,10 +1,10 @@
-﻿using NotificadorEmail.API.DTOs;
+﻿
 
 namespace NotificadorEmail.API.Services
 {
     public interface IEmailService
     {
-
-        string SendEmail(RequestDTO request);
-    }
+        
+        string SendEmail(string To, string Subject, string Message);
+    } 
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rafae\\OneDrive\\Ambiente de Trabalho\\NotificadorEmail-main\\NotificadorEmail-main\\NotificadorEmail.API\\NotificadorEmail.API.csproj": {}
+    "C:\\Users\\rafae\\OneDrive\\Ambiente de Trabalho\\WorkSpace\\NotificadorEmail-main\\NotificadorEmail.API\\NotificadorEmail.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rafae\\OneDrive\\Ambiente de Trabalho\\NotificadorEmail-main\\NotificadorEmail-main\\NotificadorEmail.API\\NotificadorEmail.API.csproj": {
+    "C:\\Users\\rafae\\OneDrive\\Ambiente de Trabalho\\WorkSpace\\NotificadorEmail-main\\NotificadorEmail.API\\NotificadorEmail.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rafae\\OneDrive\\Ambiente de Trabalho\\NotificadorEmail-main\\NotificadorEmail-main\\NotificadorEmail.API\\NotificadorEmail.API.csproj",
+        "projectUniqueName": "C:\\Users\\rafae\\OneDrive\\Ambiente de Trabalho\\WorkSpace\\NotificadorEmail-main\\NotificadorEmail.API\\NotificadorEmail.API.csproj",
         "projectName": "NotificadorEmail.API",
-        "projectPath": "C:\\Users\\rafae\\OneDrive\\Ambiente de Trabalho\\NotificadorEmail-main\\NotificadorEmail-main\\NotificadorEmail.API\\NotificadorEmail.API.csproj",
+        "projectPath": "C:\\Users\\rafae\\OneDrive\\Ambiente de Trabalho\\WorkSpace\\NotificadorEmail-main\\NotificadorEmail.API\\NotificadorEmail.API.csproj",
         "packagesPath": "C:\\Users\\rafae\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rafae\\OneDrive\\Ambiente de Trabalho\\NotificadorEmail-main\\NotificadorEmail-main\\NotificadorEmail.API\\obj\\",
+        "outputPath": "C:\\Users\\rafae\\OneDrive\\Ambiente de Trabalho\\WorkSpace\\NotificadorEmail-main\\NotificadorEmail.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rafae\\AppData\\Roaming\\NuGet\\NuGet.Config",

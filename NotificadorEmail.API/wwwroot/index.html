@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Pacientes Atrasados</title>
+</head>
+<body>
+    <h1>Lista de Pacientes Atrasados</h1>
+    <ul id="pacientes-list"></ul>
+
+    <script>
+        // Função para fazer a requisição ao endpoint e receber os dados dos pacientes atrasados
+        function getPacientesAtrasados() {
+            fetch('https://localhost:7025/api/pacientes/atrasados')
+                .then(response => response.json())
+                .then(data => {
+                    // Chame a função para criar a lista de pacientes atrasados
+                    createPacientesList(data);
+                })
+                .catch(error => console.log(error));
+        }
+
+        // Função para criar a lista de pacientes atrasados
+        function createPacientesList(pacientes) {
+            var pacientesList = document.getElementById('pacientes-list');
+            pacientes.forEach(paciente => {
+                var listItem = document.createElement('li');
+                listItem.textContent = paciente.nome; // Use "nome" em vez de "Nome"
+                pacientesList.appendChild(listItem);
+            });
+        }
+
+        // Ao carregar a página, chame a função para buscar os pacientes atrasados e criar a lista
+        window.onload = function () {
+            getPacientesAtrasados();
+        };
+    </script>
+</body>
+</html>
